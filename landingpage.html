@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<title>Info Session - UpX Academy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: 'Roboto';
+	
+}
+	.upx
+	{
+		position:absolute;
+		top: 50px;
+		left: 100px;
+		z-index: 1;
+	}
+	.tech
+	{
+	    position:absolute;
+		bottom: 10px;
+		left: 100px;
+		z-index: 2;
+	}
+	.heading
+	{
+	    position:absolute;
+		top: 210px;
+		left: 120px;
+		z-index: 2;
+	}
+	.content
+	{
+	    position:absolute;
+		top: 400px;
+		left: 100px;
+		z-index: 2;
+	}
+	.signin
+	{
+	    position:absolute;
+		top: 50px;
+		right: 0px;
+		z-index: 2;
+	width:350px;
+	height:370px;
+	padding:30px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.signinouter
+	{
+	    position:absolute;
+		top: 50px;
+		right: 100px;
+		z-index: 2;
+	width:350px;
+	height:450px;
+	padding:30px;
+	margin:40px auto;
+	background: #6B6464;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.signin .inner-wrap{
+	padding: 30px;
+	background: #white;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+.enq
+{
+ position:absolute;
+		top: 10px;
+		left: 125px;
+}
+.con
+{
+ position:absolute;
+		top: 20px;
+		left: 100px;
+}
+.call
+{
+ position:absolute;
+		top: 30px;
+		left: 60px;
+}
+.blip1
+{
+position:absolute;
+		top: -50px;
+		right: -50px;
+}
+.blip2
+{
+position:absolute;
+		bottom: -50px;
+		left: -20px;
+		transform: rotate(-30deg);
+}
+.date
+{
+position:absolute;
+		top: 30px;
+		left: 100px;
+}
+input 
+{ 
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 1; line-height: 26.4px; 
+}
+#corner {
+  border-radius: 10px;
+  background: #white;
+  padding: 15px; 
+  width: 230px;
+  height: 3px;  
+}
+#button1
+ { 
+ border-radius: 10px;
+ background: #FFA500;
+ padding: 18px; 
+  width: 230px;
+  height: 5px;
+ }
+ .btext
+ {
+ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 900; line-height: 5px; 
+ top:0px;
+ }
+ .cnt
+ {
+ position:absolute;
+ bottom:10px;
+ font-weight: 900;
+ }
+ .ch1{
+    border: 2px solid #000000;
+    position:absolute;
+		top: 630px;
+		left:100px;
+		z-index: 2;
+	width:200px;
+	height:200px;
+	padding:50px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	}
+ .ch2{
+    border: 2px solid #000000;
+     position:absolute;
+		top: 630px;
+		left:400px;
+		z-index: 2;
+	width:200px;
+	height:200px;
+	padding:50px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	}
+ .ch3{
+    border: 2px solid #000000;
+     position:absolute;
+		top: 630px;
+		left:700px;
+		z-index: 2;
+	width:200px;
+	height:200px;
+	padding:50px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	}
+ .ch4{
+    border: 2px solid #000000;
+    position:absolute;
+		top: 630px;
+		left:1000px;
+		z-index: 2;
+	width:200px;
+	height:200px;
+	padding:50px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	}
+.ch
+{
+ position:absolute;
+		top: 600px;
+		left:500px;
+}
+ .imgch1
+ {
+  position:absolute;
+		top: 10px;
+		left:70px;
+		}
+ .chcon
+ {
+ position:absolute;
+		top: 90px;
+		left:10px;
+ }
+   .text1
+	{position: absolute;top: 1265px;left: 300px;	}
+	.text01
+	{position: absolute; top: 1300px;left: 300px; }
+	.text2
+	{position: absolute;top: 1265px;left: 600px;}
+	.text02
+	{position: absolute; top: 1300px;left: 600px; }
+	.text3
+	{position: absolute;top: 1265px;left: 900px;}
+	.text03
+	{position: absolute; top: 1300px;left: 900px; }
+	
+	.speakers
+	{
+		position:absolute;
+		top: 920px;
+		left: 550px;
+		z-index: 1;
+	}
+	.speaker
+	{
+	   position:absolute;
+	   top: 910px;
+	   left: 590px;
+	   }
+	.manvendar
+	{
+		position:absolute;
+		top: 1100px;
+		left: 300px;
+		z-index: 2;
+	}
+	.suchit
+	{
+		position:absolute;
+		top: 1100px;
+		left: 600px;
+		z-index: 3;
+	}
+	.arun
+	{
+		position:absolute;
+		top: 1100px;
+		left: 900px;
+		z-index: 4;
+	}
+	.posimg
+	{
+		position:absolute;
+		top: 900px;
+	}
+	.faculty
+	{
+		position:absolute;
+		top: 1600px;
+		opacity: 0.45;
+	}
+	.globe
+	{
+	position:absolute;
+		top: 1620px;
+		left:520px;
+	}
+	.gl
+	{
+	position:absolute;
+		top: 1610px;
+		left:580px;
+	}
+	.bigdata
+	{
+	position:absolute;
+		top: 1720px;
+		left:100px;
+	}
+	.california
+	{
+	position:absolute;
+		top: 1750px;
+		left:100px;
+		}
+	.hoa
+	{
+	position:absolute;
+		top: 1720px;
+		left:550px;
+	}
+	.kabbage
+	{
+	position:absolute;
+		top: 1750px;
+		left:550px;
+		}
+	.iot
+	{
+	position:absolute;
+		top: 1720px;
+		left:1000px;
+	}
+	.ds
+	{
+	position:absolute;
+		top: 1750px;
+		left:1000px;
+		}
+	.bdt
+	{
+	position:absolute;
+		top: 1870px;
+		left:100px;
+	}
+	
+	.pds
+	{
+	position:absolute;
+		top: 1870px;
+		left:550px;
+	}
+	.anal
+	{
+	position:absolute;
+		top: 2020px;
+		left:1000px;
+	}
+	.lsd
+	{
+	position:absolute;
+		top: 2050px;
+		left:1000px;
+		}
+	.hogp
+	{
+	position:absolute;
+		top: 1870px;
+		left:1000px;
+		}
+	.Ex
+	{
+	position:absolute;
+		top: 2020px;
+		left:100px;
+	}
+	.bda
+	{
+		position:absolute;
+		top: 2050px;
+		left:100px;
+    }	
+	.bdcimg
+	{
+	position:absolute;
+		top: 1780px;
+		left:100px;
+	}
+	.hoaimg
+	{
+	position:absolute;
+		top: 1780px;
+		left:550px;
+	}
+	.iotimg
+	{
+	position:absolute;
+		top: 1780px;
+		left:1000px;
+	}
+	.bdtimg
+	{
+	position:absolute;
+		top: 1900px;
+		left:100px;
+	}
+	.pdsimg
+	{
+	position:absolute;
+		top: 1900px;
+		left:550px;
+	}
+	.hogpimg
+	{
+	position:absolute;
+		top: 1900px;
+		left:1000px;
+	}
+	.aeimg
+	{
+	position:absolute;
+		top: 2080px;
+		left:1000px;
+	}
+	.eximg
+	{
+	position:absolute;
+		top: 2080px;
+		left:100px;
+	}
+
+	.lpcontainer
+	{
+	    position:absolute;
+		top: 2400px;
+		left: 70px;
+		z-index: 2;
+	width:1200px;
+	height:600px;
+	padding:30px;
+	margin:40px auto;
+	background: #C0C0C0;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+   }
+   .lpimg
+   {
+   position:absolute;
+		top: 2370px;
+		left: 70px;
+		}
+   .yellow 
+   {
+   background: linear-gradient(to bottom, #ffff66 0%, #ff9900 100%);
+   }
+   .green
+   {
+   background: linear-gradient(to bottom, #00ff00 0%, #009900 100%);
+   }
+   .blue
+   {
+   background: linear-gradient(to bottom, #3399ff 0%, #0033cc 100%);
+   }
+   .red
+   {
+   background: linear-gradient(to bottom, #ff3300 0%, #ff5050 100%);
+   }
+   label
+   {
+   width: 130px;
+   height: 55px;
+   }
+   #lab1
+   {
+   position:absolute;
+		top: 400px;
+		left: 100px;
+		line-height: 40px; 
+   }
+    #lab2
+   {
+   position:absolute;
+		top: 400px;
+		left: 350px;
+		line-height: 40px; 
+   }
+   #lab3
+   {
+   position:absolute;
+		top: 400px;
+		left: 600px;
+		line-height: 40px; 
+   }
+    #lab4
+   {
+   position:absolute;
+		top: 400px;
+		left: 850px;
+		line-height: 40px; 
+   }
+   #lab5
+   {
+   position:absolute;
+		top: 330px;
+		left: 350px;
+		line-height: 40px; 
+   }
+    #lab6
+   {
+   position:absolute;
+		top: 330px;
+		left: 600px;
+		line-height: 40px; 
+   }
+    #lab7
+   {
+   position:absolute;
+		top: 330px;
+		left: 850px;
+		line-height: 40px; 
+   }
+   #lab8
+   {
+   position:absolute;
+		top: 260px;
+		left: 600px;
+		line-height: 40px; 
+   }
+   #lab9
+   {
+   position:absolute;
+		top: 260px;
+		left: 850px;
+		line-height: 40px; 
+   }
+   #lab10
+   {
+   position:absolute;
+		top: 190px;
+		left: 850px;
+		line-height: 40px; 
+   }
+   #lab11
+   {
+   position:absolute;
+		top: 120px;
+		left: 850px;
+		line-height: 40px; 
+   }
+   .lpcontainer2
+   {
+    position:absolute;
+		top: 3150px;
+		left: 70px;
+		z-index: 2;
+	width:1200px;
+	height:600px;
+	padding:30px;
+	margin:40px auto;
+	background: #C0C0C0;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	}
+	 .lpimg1
+   {
+   position:absolute;
+		top: 3120px;
+		left: 70px;
+		}
+	.bigdatacontainer
+	{
+	    position:absolute;
+		top: 4700px;
+		left: 240px;
+		z-index: 2;
+	width:400px;
+	height:250px;
+	padding:30px;
+	margin:40px auto;
+	background: #696969;
+   }
+   .datascicontainer
+	{
+	    position:absolute;
+		top: 4700px;
+		left: 660px;
+		z-index: 2;
+	width:400px;
+	height:250px;
+	padding:30px;
+	margin:40px auto;
+	background: #696969;
+   }
+   .end
+	{
+	    position:absolute;
+		top: 5000px;
+		z-index: 2;
+	width:100%;
+	height:100px;
+	padding:30px;
+	margin:40px auto;
+	background: #696969;
+   }
+	</style>
+</head>
+<body>
+<img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/sbg-1404.png" style="width:100%;">
+<div class="container">
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/hyphen.png" class="upx">
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/tm-logo.png" class="tech">
+ <h1 style=" color:white;" class="heading">6 MONTH CERTIFICATE PROGRAM <br> IN BIG DATA &amp; DATA SCIENCE </h1>
+ <h3 style=" color:white;font-weight: 1;" class="content">Interactive session discussing course structure, curriculum and <br> timings about upcoming batches. </h3>
+
+ </div>
+
+ <div class="signinouter">
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/blip.png" style="width:100px;height:130px;" class="blip1">
+    
+  <h4 style=" color:white;" class="enq">For Enquiries <h4>
+   <h3 style=" color:white;" class="con">1800-123-1260 <h3>
+   <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/1404%20(2).png" class="call">
+<div class="signin">
+<h4 class="enq">ONLINE &amp; FREE<h4>
+<h5 style=" color:orange;" class="date">4th June | 5th June | 9 PM IST<h5>
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/blip.png" style="width:60px;height:70px;"  class="blip2">
+ <form>
+ <div class="inner-wrap">
+ <input type="text" placeholder="  First Name" name="fname" id="corner" required><br><br>
+ <input type="text" placeholder="  Last Name" name="lname" id="corner" required><br><br>
+ <input type="text" placeholder="  Email" name="email" id="corner" required><br><br>
+ <input type="tel" pattern="\d\d\d\d\d\d\d\d\d\d+" placeholder="  Phone" name="phone" id="corner" required><br><br>
+ <input style="color:white;" type="submit" value="SAVE MY SPOT" id="button1" class="btext">
+ <p id="countdown" class="cnt"></p>
+ </div>
+ </div>
+ </div>
+ <p id="countdown" class="cnt"></p>
+ </form>
+   <h1 class="ch" style="color:white;" >COURSE HIGHLIGHTS</h1>
+   <div class="ch1">
+    <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%207.png" style="width:60px;height:70px;"class="imgch1">
+	<p class="chcon text-center">Online, live &amp; Interactive sessions with use cases, theory and projects</p>
+   </div>
+   <div class="ch2">
+    <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%208.png" style="width:60px;height:70px;"class="imgch1">
+		<p class="chcon text-center">Hands-on experience with real world datasets from BFSI, Retail, Healthcare, Entertainment &amp; Sports</p>
+   </div>
+   <div class="ch3">
+    <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%209.png" style="width:60px;height:70px;"class="imgch1">
+		<p class="chcon text-center">Best in class curriculum designed by Industry experts with pre-reads, videos, assignments &amp; installation guides</p>
+   </div>
+   <div class="ch4">
+    <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2010.png" style="width:60px;height:70px;"class="imgch1">
+		<p class="chcon text-center">Industry recognised certification byTECH MAHINDRA</p>
+   </div>
+   
+   <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/sbg-1404.png" class="posimg" style="width:100%;">
+
+   <div class="container">
+
+   <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/1404%20(10).png" style="width:30px;height:50px;" class="speakers">
+ <h1 style="color:#FF4500" class="speaker">SPEAKERS</h1>
+
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Artboard%201(1).png" class="manvendar" >
+ <h4 style=" color:white;" class="text1 text-center">MANVENDAR SINGH</h4>
+ <p style=" color:white;" class="text01 text-center"> Founder &amp; CEO UpX Academy<br>
+MBA, ISB</p>
+
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Artboard%202.png" class="suchit">
+ <h4 style=" color:white;" class="text2 text-center">SUCHIT MANCHUMDAR</h4>
+ <p style=" color:white;" class="text02 text-center"> IoT &amp; Smart City consultant with <br> AP Government<br>
+   MBA, ISB</p>
+  
+ <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Artboard%203(1).png" class="arun">
+ <h4 style=" color:white;" class="text3 text-center">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ARUN K</h4>
+ <p style=" color:white;" class="text03 text-center">Healthcare Analytics Expert<br>
+ University of Cologne</p>
+  
+</div>
+<div class="faculty">
+<img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/sbg-1404.png" style="width:100%;">
+</div>
+
+<h1 style=" color:white;" class="gl">World Class Faculty</h1>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/globe.png" class="globe">
+
+<h4 style=" color:white;font-weight:900" class="bigdata">Big Data Consultant &amp; Trainer,</h4>
+<h4 style=" color:white;" class="california">California</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2013.png" class="bdcimg">
+ 
+ <h4 style=" color:white;font-weight:900" class="hoa">Head of Analytics</h4>
+ <h4 style=" color:white;" class="kabbage">Kabbage Inc</h4>
+ <img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2014.png" class="hoaimg">
+
+<h4 style=" color:white;font-weight:900" class="iot">IoT &amp; Smart City expert,</h4>
+<h4 style=" color:white;" class="ds">Data Scientist</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2015.png" class="iotimg">
+
+<h4 style=" color:white;font-weight:900" class="bdt">Big Data Trainer,</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2016.png" class="bdtimg">
+
+<h4 style=" color:white;font-weight:900" class="pds">Principal Data Scientist</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2017.png" class="pdsimg">
+
+<h4 style=" color:white;font-weight:900" class="hogp">Head of Google Projects</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2018.png" class="hogpimg">
+
+<h4 style=" color:white;font-weight:900" class="anal">Analytics Expert,</h4>
+<h4 style=" color:white;" class="lsd">Life Science Domain</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Copy%20(1)%20of%20Asset%2020.png" class="aeimg">
+
+<h4 style=" color:white;font-weight:900" class="Ex">Ex - VP &amp; Head,</h4>
+<h4 style=" color:white;" class="bda">Big Data Analytics</h4>
+<img  src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2019.png" class="eximg">
+</div>
+
+<img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2022.png" class="lpimg">
+     <div class="lpcontainer">
+	     <label id="lab1" style=" color:white;" class="yellow text-center"><h5>Hadoop</h5></label>
+		 <label id="lab2" style=" color:white;" class="yellow text-center"><h5>Hadoop</h5></label>
+		 <label id="lab3" style=" color:white;" class="yellow text-center"><h5>Hadoop</h5></label>
+		 <label id="lab4" style=" color:white;" class="yellow text-center"><h5>Hadoop</h5></label>
+		 <p style="position:absolute;top:420px;left:240px;">6 weeks</p>
+		 <p style="position:absolute;top:420px;left:490px;">6 weeks</p>
+		 <p style="position:absolute;top:420px;left:740px;">6 weeks</p>
+		 <p style="position:absolute;top:420px;left:990px;">6 weeks</p>
+		 <label id="lab5" style=" color:white;" class="green text-center"><h5>MongoDB, HBase Sqoop &amp; Flume</h5></label>
+		 <label id="lab6" style=" color:white;" class="green text-center"><h5>MongoDB, HBase Sqoop &amp; Flume</h5></label>
+		 <label id="lab7" style=" color:white;" class="green text-center"><h5>MongoDB, HBase Sqoop &amp; Flume</h5></label>
+		 <p style="position:absolute;top:350px;left:490px;">3 weeks</p>
+		 <p style="position:absolute;top:350px;left:740px;">3 weeks</p>
+		 <p style="position:absolute;top:350px;left:990px;">3 weeks</p>
+		 <label id="lab8" style=" color:white;" class="blue text-center"><h5>Spark</h5></label>
+		 <label id="lab9" style=" color:white;" class="blue text-center"><h5>Spark</h5></label>
+		 <p style="position:absolute;top:280px;left:740px;">5 weeks</p>
+		 <p style="position:absolute;top:280px;left:990px;">5 weeks</p>
+		 <label id="lab10" style=" color:white;" class="red text-center"><h5>Machine Learning<br>with Spark</h5></label>
+		 <label id="lab11" style=" color:white;" class="red text-center"><h5>Big Data Integration &amp; Processing</h5></label>
+		 <p style="position:absolute;top:210px;left:990px;">6 weeks</p>
+		 <p style="position:absolute;top:140px;left:990px;">5 weeks</p>
+		 
+		 <h4 style="position:absolute;top:480px;left:100px;font-weight:800">FOUNDATION</h4>
+		 <h4 style="position:absolute;top:480px;left:350px;font-weight:800">SPECIALIZATION</h4>
+		 <h4 style="position:absolute;top:480px;left:600px;font-weight:800">SUPER SPECIALIZATION</h4>
+		 <h4 style="position:absolute;top:480px;left:850px;font-weight:800">6 MONTH CERTIFICATE <BR> PROGRAMME</h4>
+		 <h3 style="position:absolute;top:100px;left:100px;font-weight:800">BIG DATA</h3><h3 style="position:absolute;top:100px;left:220px;">LEARNING PATH</h3> 
+		 
+		 <h4 style="position:absolute;top:360px;left:100px;font-weight:800">6 Weeks</h4>
+		 <h4 style="position:absolute;top:290px;left:350px;font-weight:800">9 Weeks</h4>
+		 <h4 style="position:absolute;top:220px;left:600px;font-weight:800">14 Weeks</h4>
+		 <h4 style="position:absolute;top:80px;left:850px;font-weight:800">25 Weeks</h4>
+		 
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:100px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:350px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:600px;">
+	     <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:850px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/green-star.png" style="position:absolute;top:530px;left:365px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/green-star.png" style="position:absolute;top:530px;left:615px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/green-star.png" style="position:absolute;top:530px;left:865px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/blue-star.png" style="position:absolute;top:530px;left:630px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/blue-star.png" style="position:absolute;top:530px;left:880px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/oramge-star.png" style="position:absolute;top:530px;left:895px;">
+	</div>
+		 
+<img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/Asset%2023.png" class="lpimg1">
+     <div class="lpcontainer2">
+	     <label id="lab1" style=" color:white;" class="yellow text-center"><h5>Data analytics<br>with Python</h5></label>
+		 <label id="lab2" style=" color:white;" class="yellow text-center"><h5>Data analytics<br>with Python</h5></label>
+		 <label id="lab3" style=" color:white;" class="yellow text-center"><h5>Data analytics<br>with Python</h5></label>
+		 <label id="lab4" style=" color:white;" class="yellow text-center"><h5>Data analytics<br>with Python</h5></label>
+		 <p style="position:absolute;top:420px;left:240px;">5 weeks</p>
+		 <p style="position:absolute;top:420px;left:490px;">5 weeks</p>
+		 <p style="position:absolute;top:420px;left:740px;">5 weeks</p>
+		 <p style="position:absolute;top:420px;left:990px;">5 weeks</p>
+		 <label id="lab5" style=" color:white;" class="green text-center"><h5>Tableau</h5></label>
+		 <label id="lab6" style=" color:white;" class="green text-center"><h5>Tableau</h5></label>
+		 <label id="lab7" style=" color:white;" class="green text-center"><h5>Tableau</h5></label>
+		 <p style="position:absolute;top:350px;left:490px;">4 weeks</p>
+		 <p style="position:absolute;top:350px;left:740px;">4 weeks</p>
+		 <p style="position:absolute;top:350px;left:990px;">4 weeks</p>
+		 <label id="lab8" style=" color:white;" class="blue text-center"><h5>Machine<br>Learning</h5></label>
+		 <label id="lab9" style=" color:white;" class="blue text-center"><h5>Machine<br>Learning</h5></label>
+		 <p style="position:absolute;top:280px;left:740px;">5 weeks</p>
+		 <p style="position:absolute;top:280px;left:990px;">5 weeks</p>
+		 <label id="lab10" style=" color:white;" class="red text-center"><h5>Advanced<br>Machine Learning</h5></label>
+		 <label id="lab11" style=" color:white;" class="red text-center"><h5>Deep learning for<br>NLP</h5></label>
+		 <p style="position:absolute;top:210px;left:990px;">6 weeks</p>
+		 <p style="position:absolute;top:140px;left:990px;">5 weeks</p>
+		 
+		 <h4 style="position:absolute;top:480px;left:100px;font-weight:800">FOUNDATION</h4>
+		 <h4 style="position:absolute;top:480px;left:350px;font-weight:800">SPECIALIZATION</h4>
+		 <h4 style="position:absolute;top:480px;left:600px;font-weight:800">SUPER SPECIALIZATION</h4>
+		 <h4 style="position:absolute;top:480px;left:850px;font-weight:800">6 MONTH CERTIFICATE <BR> PROGRAMME</h4>
+		 <h3 style="position:absolute;top:100px;left:100px;font-weight:800">DATA SCIENCE</h3><h3 style="position:absolute;top:100px;left:270px;">LEARNING PATH</h3> 
+		 
+		 <h4 style="position:absolute;top:360px;left:100px;font-weight:800">5 Weeks</h4>
+		 <h4 style="position:absolute;top:290px;left:350px;font-weight:800">9 Weeks</h4>
+		 <h4 style="position:absolute;top:220px;left:600px;font-weight:800">14 Weeks</h4>
+		 <h4 style="position:absolute;top:80px;left:850px;font-weight:800">25 Weeks</h4>
+		 
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:100px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:350px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:600px;">
+	     <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/yellow-star.png" style="position:absolute;top:530px;left:850px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/green-star.png" style="position:absolute;top:530px;left:365px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/green-star.png" style="position:absolute;top:530px;left:615px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/green-star.png" style="position:absolute;top:530px;left:865px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/blue-star.png" style="position:absolute;top:530px;left:630px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/blue-star.png" style="position:absolute;top:530px;left:880px;">
+		 <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/oramge-star.png" style="position:absolute;top:530px;left:895px;">
+	</div>
+	<img src="https://img1.goodfon.com/wallpaper/big/7/23/typing-notebook-keyboard.jpg" 
+	style="width:100%;height:550px;position:absolute;top:3850px;">	 		 
+		 <h2 style="position:absolute;top:3870px;color:white;left:550px;">UpX Student Speak</h2>
+	<img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/1404%20(1).png" 
+	style="position:absolute;top:3950px;left:350px">
+    <img src="https://d24cdstip7q8pz.cloudfront.net/t/t20161026195759/content/common/images/1404%20(1).png" 
+	style="position:absolute;top:4300px;left:950px">		
+	
+	<section style="position:absolute;top:4020px;left:400px;color:white;">
+	<p>UpX Academy has understood the Big Data Analytics space fairly well and are doing a brilliant job<br> in educating 
+young leaders and professionals who look forward to join this sector.</p>
+<p style="position:absolute;left:400px">- Jai Kumar - Director, BI, NTT DATA</p> <br><br>
+
+    <p>UpX Academy has excellent faculty on-board that brings in industry perspective in their programs.<br>The five week 
+training they conducted has helped my team adopt the latest Big Data Analytics practices.</p>
+<p style="position:absolute;left:250px">- Puneet Sakhuja - BI, Analytics - Practice leader, Tech Mahindra</p>  
+<br><br>
+    <p>Initially, we were a bit apprehensive about online trainings. But the interactive approach, support<br> and the way the 
+trainings were organized impressed my team. The pace of the training was<br> perfect and suitable for even beginners 
+in this area.</p>
+<p style="position:absolute;left:300px">- Siddharth Bhattacharya - AVP Analytics, Barclays</p>
+</section>
+  <h1 style="position:absolute;top:4450px;left:550px">About UpX Academy</h1>  
+  <section style="position:absolute;top:4550px;left:400px;right:300px;">
+  <p>In today’s digital age, data has the potential to transform businesses through insights and <br>analytics. However, this 
+power still awaits to be fully harnessed. As a world-class educational<br> venture, we recognize this challenge and are 
+therefore committed to empower professionals<br> through transformational courses in Big Data and Data Science. </p>
+</section>
+
+<h2 style="position:absolute;top:4650px;left:560px"> OUR COURSES</h2>
+
+<div class="bigdatacontainer">
+ <h4 style="color:white;font-weight:900"><center>BIG DATA</center></h4>
+    <h4 style="color:white;"><center>HADOOP</center></h4>
+        <h4 style="color:white;"><center>APACHE SPARK</center></h4>
+            <h4 style="color:white;"><center>MONGO DB</center></h4>
+	<button style="position:absolute;left:150px;color:white;background:orange;border-radius:5px" type="button">KNOW MORE</button>
+
+
+</div>
+<div class="datascicontainer">
+ <h4 style="color:white;font-weight:900"><center>DATA SCIENCE</h4>
+    <h4 style="color:white;"><center>DATA ANALYTICS</h4>
+        <h4 style="color:white;"><center>MACHINE LEARNING</h4>
+            <h4 style="color:white;"><center>TABLEAU</h4>
+	<button style="position:absolute;left:150px;color:white;background:orange;border-radius:5px" type="button">KNOW MORE</button>
+</div>
+
+<div class="end">
+     <a href="http://www.upxacademy.com" style="color:white;position:absolute;left:100px;top:10px;">www.upxacademy.com</a>
+     <a href="mailto:info@upxacademy.com" style="color:white;position:absolute;left:100px;top:30px;">Email: info@upxacademy.com</a>
+     <p  style="color:white;position:absolute;right:100px;top:10px;">© 2017 Upx. All rights Reserved</p>
+
+<div>
+<script>
+var lastdate = new Date("Mar 15, 2019 24:00:00").getTime();
+var inter = setInterval(function() {
+
+  var today = new Date().getTime();
+  var diff = lastdate - today;
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var hrs = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  var secs = Math.floor((diff % (1000 * 60)) / 1000);
+  document.getElementById("countdown").innerHTML = days + "days " + hrs + "hrs "
+  + mins + "mins " + secs + "secs to end !!! ";
+    
+  if (diff < 0) {
+    clearInterval(inter);
+    document.getElementById("countdown").innerHTML = "OOPS !!!! Time exceeded";
+  }
+}, 1000);
+</script>
+		 
+</body>
+</html>
